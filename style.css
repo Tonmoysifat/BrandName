@@ -51,14 +51,12 @@ header a:hover {
     border-bottom-left-radius: 150px;
     border-top-right-radius: 100px;
 }
-
 .home-img p {
     width: 41%;
     margin: 0 auto;
     font-weight: bold;
     color: darkgray;
 }
-
 .content {
     padding: 20px;
     margin: 20px 5px;
@@ -73,50 +71,41 @@ header a:hover {
     padding: 4% 10%;
     background-color: #e8ded2;
 }
-
 .hr-style {
     border-top: 5px dotted white;
     width: 80px;
 }
-
 #tutorials {
     padding: 4% 10%;
     background-color: #a3d2ca;
 }
-
 .t-card {
     border: none;
     transition: all .2s;
 }
-
 .t-card:hover {
     transform: scale(1.03);
     /* box-shadow: -8px 8px  rgb(10, 199, 199), -15px 15px  greenyellow !important; */
     box-shadow: -10px 10px 4px #424141c7 !important
 }
-
 .t-c-ti {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 #testimonial {
     padding: 5%;
     background-color: #5eaaa8;
 }
-
 .carousel-item {
     text-align: center;
     padding: 7% 15%;
     font-style: italic;
     font-size: 1.2rem;
 }
-
 .testi-img {
     width: 120px;
     height: auto;
     margin-bottom: 5px;
 }
-
 #contact {
     padding: 2% 10%;
     background-color: #5e95aa;
@@ -129,10 +118,8 @@ header a:hover {
     position: relative;
     left: -1px;
 }
-
 .s-search i {
     font-size: 18px;
-
 }
 .s-search:active {
     border-color: #ced4da !important;
@@ -178,7 +165,7 @@ header a:hover {
         top: 6px;
     }
     .n-link {
-        background-color: black;
+         background-color: #6cac08;
         border-radius: 10px;
         margin-bottom: 20px;
     }
