@@ -111,21 +111,25 @@ header a:hover {
     background-color: #5e95aa;
 }
 .s-search {
-    border: 1px solid #7e22ce !important;
-    background-color:#a9a9a982 !important;
-    height: 38px;
+    border: 2px solid #7e22ce !important;
+    background-color: #a9a9a982 !important;
+    height: 40px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
 }
+
 .s-search i {
     font-size: 18px;
 }
-.s-input ,.s-input:hover {
+
+.s-input,
+.s-input:hover {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    border-color: #7e22ce;
-    background-color:#a9a9a982;
-    box-shadow: none;
+    border: 2px solid #7e22ce !important;
+    background-color: #a9a9a982 !important;
+    box-shadow: none !important;
+    border-right: none !important;
 }
 /* responsive css */
 @media screen and (max-width:991px) {
@@ -161,7 +165,7 @@ header a:hover {
 @media screen and (max-width:767px) {
     .logo-text {
         position: fixed;
-        top: 6px;
+        top: 10px;
     }
     .n-link {
          background-color: #6cac08;
