@@ -111,22 +111,21 @@ header a:hover {
     background-color: #5e95aa;
 }
 .s-search {
-    border: 1px solid #ced4da !important;
+    border: 1px solid #7e22ce !important;
+    background-color:#a9a9a982 !important;
     height: 38px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    position: relative;
-    left: -1px;
 }
 .s-search i {
     font-size: 18px;
 }
-.s-search:active {
-    border-color: #ced4da !important;
-}
-.s-input {
+.s-input ,.s-input:hover {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    border-color: #7e22ce;
+    background-color:#a9a9a982;
+    box-shadow: none;
 }
 /* responsive css */
 @media screen and (max-width:991px) {
