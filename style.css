@@ -2,114 +2,115 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 span {
     color: lightseagreen;
 }
+
 header {
     background-color: white;
     height: 70px;
 }
+
 header a {
     transition: all .5s;
 }
+
 header a:hover {
     transform: scale(1.1);
 }
-.home-img::before {
-    content: "";
-    background: url("images/home.jpg") no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: .8;
-}
+
 .home-img {
-    margin-bottom: 200px;
+    background: url("images/home.jpg") no-repeat center center/cover;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .item {
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
-    align-items: center;
-    margin-top: 81px;
-}
-.item::before {
-    content: "";
+    text-align: center;
     background-color: black;
-    position: absolute;
     width: 679px;
     height: 312px;
-    z-index: -1;
-    opacity: .6;
+    opacity: .8;
     border-bottom-left-radius: 150px;
     border-top-right-radius: 100px;
 }
+
 .home-img p {
-    width: 41%;
-    margin: 0 auto;
     font-weight: bold;
     color: darkgray;
 }
+
 .content {
     padding: 20px;
     margin: 20px 5px;
 }
+
 .icon-style {
     background-color: #bb0aac;
     color: white;
     padding: 15px;
 }
+
 /* about-me */
 #about-me {
     padding: 4% 10%;
     background-color: #e8ded2;
 }
+
 .hr-style {
     border-top: 5px dotted white;
     width: 80px;
 }
+
 #tutorials {
     padding: 4% 10%;
     background-color: #a3d2ca;
 }
+
 .t-card {
     border: none;
     transition: all .2s;
 }
+
 .t-card:hover {
     transform: scale(1.03);
     /* box-shadow: -8px 8px  rgb(10, 199, 199), -15px 15px  greenyellow !important; */
     box-shadow: -10px 10px 4px #424141c7 !important
 }
+
 .t-c-ti {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
 #testimonial {
     padding: 5%;
     background-color: #5eaaa8;
 }
+
 .carousel-item {
     text-align: center;
     padding: 7% 15%;
     font-style: italic;
     font-size: 1.2rem;
 }
+
 .testi-img {
     width: 120px;
     height: auto;
     margin-bottom: 5px;
 }
+
 #contact {
     padding: 2% 10%;
     background-color: #5e95aa;
 }
+
 .s-search {
     border: 2px solid #7e22ce !important;
     background-color: #a9a9a982 !important;
@@ -131,57 +132,71 @@ header a:hover {
     box-shadow: none !important;
     border-right: none !important;
 }
+
 /* responsive css */
-@media screen and (max-width:991px) {
-    .home-img::before {
-        width: 0;
-        height: 0;
-    }
-    .item::before {
-        width: 0;
-        height: 0;
-    }
-    .home-img p {
-        width: 90%;
-        margin: 0 auto;
-    }
+@media screen and (max-width:767px) {
     .home-img {
-        background-color: #216f5f;
-        margin-bottom: 0;
+        background: #216f5f;
+        height: 350px;
     }
+
     .item {
-        margin-top: 60px;
+        background: none;
+        margin-top: 50px;
     }
+
+    .logo-text {
+        position: fixed;
+        top: 10px;
+    }
+
     .btn-outline-light {
         border-color: black;
         color: black;
     }
+
     .btn-outline-light:hover {
         border-color: rgba(0, 0, 0, 0.808);
         background-color: rgba(0, 0, 0, 0.808);
         color: white !important;
     }
-}
-@media screen and (max-width:767px) {
-    .logo-text {
-        position: fixed;
-        top: 10px;
-    }
+
     .n-link {
-         background-color: #6cac08;
+        background-color: #6cac08;
         border-radius: 10px;
         margin-bottom: 20px;
     }
+
     .n-link:hover {
         color: white !important;
     }
 }
+
 @media screen and (max-width:387px) {
+    .home-img {
+        height: 450px;
+    }
+
+    .s-input {
+        width: 150px !important;
+    }
+
     footer {
         width: 206px;
         margin: auto;
     }
+
     footer ul {
         margin: auto;
+    }
+}
+
+@media screen and (max-width:281px) {
+    .f-b-button {
+        margin-top: -10px !important;
+    }
+
+    .fc-button {
+        margin-bottom: 10px;
     }
 }
