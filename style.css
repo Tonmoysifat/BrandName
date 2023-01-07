@@ -6,7 +6,12 @@
 span {
     color: lightseagreen;
 }
-
+.n-link:hover{
+    text-decoration:#7e22ce 2px overline;
+    position: relative;
+    top: 1px !important;
+    color: #7e22ce !important;
+}
 header {
     background-color: white;
     height: 70px;
@@ -167,8 +172,8 @@ header a:hover {
         margin-bottom: 20px;
     }
 
-    .n-link:hover {
-        color: white !important;
+   .n-link:hover {
+        color: #7e22ce !important;
     }
 }
 
