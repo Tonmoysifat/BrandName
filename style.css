@@ -13,7 +13,6 @@ span {
     color: #7e22ce !important;
 }
 header {
-    background-color: white;
     height: 70px;
 }
 
@@ -157,7 +156,6 @@ header a:hover {
     .item {
         background: none;
         margin-top: 50px;
-        animation: for-item 1s ease-in 0s 1 alternate forwards;
     }
 
     .logo-text {
