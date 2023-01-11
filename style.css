@@ -43,12 +43,13 @@ header a:hover {
     opacity: .8;
     border-bottom-left-radius: 150px;
     border-top-right-radius: 100px;
-    animation: for-item 1.5s ease-in 0s 1 alternate forwards;
+    animation: for-item 1.5s ease-in 1s 1 alternate forwards;
     position: relative;
+    top: -455px;
 }
 @keyframes for-item {
     from{
-        top: -350px;
+        top: -455px;
     }
     to{
         top: 0px;
@@ -154,6 +155,7 @@ header a:hover {
     .home-img {
         background: #216f5f;
         height: 350px;
+        animation: for-item 1.5s ease-in 0s 1 alternate forwards;
     }
 
     .item {
