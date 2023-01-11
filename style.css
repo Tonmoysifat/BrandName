@@ -155,12 +155,12 @@ header a:hover {
     .home-img {
         background: #216f5f;
         height: 350px;
-        animation: for-item 1.5s ease-in 0s 1 alternate forwards;
     }
 
     .item {
         background: none;
         margin-top: 50px;
+        animation: for-item 1s ease-in 0s 1 alternate forwards;
     }
 
     .logo-text {
