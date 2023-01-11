@@ -148,6 +148,9 @@ header a:hover {
 
 /* responsive css */
 @media screen and (max-width:767px) {
+     header{
+        border-bottom: 1px solid white;
+    }
     .home-img {
         background: #216f5f;
         height: 350px;
