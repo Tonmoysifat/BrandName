@@ -44,8 +44,17 @@ header a:hover {
     opacity: .8;
     border-bottom-left-radius: 150px;
     border-top-right-radius: 100px;
+    animation: for-item 1.5s ease-in 0s 1 alternate forwards;
+    position: relative;
 }
-
+@keyframes for-item {
+    from{
+        top: -350px;
+    }
+    to{
+        top: 0px;
+    }
+}
 .home-img p {
     font-weight: bold;
     color: darkgray;
@@ -148,6 +157,7 @@ header a:hover {
     .item {
         background: none;
         margin-top: 50px;
+        animation: for-item 1s ease-in 0s 1 alternate forwards;
     }
 
     .logo-text {
