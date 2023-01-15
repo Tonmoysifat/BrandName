@@ -59,6 +59,9 @@ header a:hover {
     font-weight: bold;
     color: darkgray;
 }
+#pricing {
+    padding: 3.5% 0;
+}
 
 .content {
     padding: 20px;
@@ -73,7 +76,7 @@ header a:hover {
 
 /* about-me */
 #about-me {
-    padding: 4% 10%;
+    padding: 6% 10%;
     background-color: #e8ded2;
 }
 
@@ -83,7 +86,7 @@ header a:hover {
 }
 
 #tutorials {
-    padding: 4% 10%;
+    padding: 6% 10%;
     background-color: #a3d2ca;
 }
 
@@ -121,7 +124,7 @@ header a:hover {
 }
 
 #contact {
-    padding: 2% 10%;
+    padding: 6% 10%;
     background-color: #5e95aa;
 }
 
