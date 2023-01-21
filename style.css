@@ -2,16 +2,60 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+:root {
+    --first-color: White;
+    --second-color: #111827;
+}
+.dark-theme{
+    --first-color: #111827;
+    --second-color: white;
+}
+.dark-mode {
+    color: var(--second-color) !important;
+}
+body {
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
 
 span {
     color: lightseagreen;
 }
-.n-link:hover{
-    text-decoration:#7e22ce 2px overline;
+
+nav{
+    background-color: var(--first-color);
+    color: var(--second-color);
+    border-bottom: 1px solid var(--second-color);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    background: -webkit-linear-gradient(#00e0fe,#1107fe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.n-link {
+    color: #7e22ce !important;
+}
+.n-link:hover {
+    text-decoration: #7e22ce 2px overline;
     position: relative;
     top: 1px !important;
     color: #7e22ce !important;
 }
+.dropdown-toggle::after{
+    position: relative; 
+    top: 3px;
+    right: 1px;
+    color: var(--second-color) !important;
+}
+.login-signup{
+    position: relative;
+    left: 10px;
+}
+.btn-forls{
+    margin-right: -11px;
+}
+
 header {
     height: 70px;
 }
@@ -26,7 +70,10 @@ header a:hover {
 
 .home-img {
     background: url("images/home.jpg") no-repeat center center/cover;
+    /* background: url("https://source.unsplash.com/random/?code") no-repeat center center/cover; */
+    background-attachment: fixed;
     height: 500px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,6 +87,7 @@ header a:hover {
     background-color: black;
     width: 679px;
     height: 312px;
+    /* margin-top: -160px; */
     opacity: .8;
     border-bottom-left-radius: 150px;
     border-top-right-radius: 100px;
@@ -55,12 +103,25 @@ header a:hover {
         top: 0px;
     }
 }
+#pricing {
+    padding: 3.5% 0;
+}
+.card{
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
+.modal-content{
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
+.modal-content button{
+    border: none;
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
 .home-img p {
     font-weight: bold;
     color: darkgray;
-}
-#pricing {
-    padding: 3.5% 0;
 }
 
 .content {
@@ -77,19 +138,18 @@ header a:hover {
 /* about-me */
 #about-me {
     padding: 6% 10%;
-    background-color: #e8ded2;
+    /* background-color: #e8ded2; */
 }
 
 .hr-style {
-    border-top: 5px dotted white;
+    border-top: 5px dotted var(--second-color);
     width: 80px;
 }
 
 #tutorials {
     padding: 6% 10%;
-    background-color: #a3d2ca;
+    /* background-color: #a3d2ca; */
 }
-
 .t-card {
     border: none;
     transition: all .2s;
@@ -102,12 +162,14 @@ header a:hover {
 }
 
 .t-c-ti {
-    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: var(--second-color);
+    color: var(--first-color);
 }
 
 #testimonial {
     padding: 5%;
-    background-color: #5eaaa8;
+    background-color: #585a5a;
 }
 
 .carousel-item {
@@ -116,7 +178,6 @@ header a:hover {
     font-style: italic;
     font-size: 1.2rem;
 }
-
 .testi-img {
     width: 120px;
     height: auto;
@@ -125,12 +186,12 @@ header a:hover {
 
 #contact {
     padding: 6% 10%;
-    background-color: #5e95aa;
+    /* background-color: #5e95aa; */
 }
-
 .s-search {
     border: 2px solid #7e22ce !important;
     background-color: #a9a9a982 !important;
+    /* color: white !important; */
     height: 40px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -148,16 +209,26 @@ header a:hover {
     background-color: #a9a9a982 !important;
     box-shadow: none !important;
     border-right: none !important;
+    color: white !important;
 }
-
+.btn-main{
+    transition: all 0.3s ease;
+    border-radius: 100px;
+}
+.btn-main:hover{
+    transform: translateY(-5px);
+}
 /* responsive css */
 @media screen and (max-width:767px) {
-     header{
-        border-bottom: 1px solid white;
+    nav{
+        border-bottom: none ;
     }
     .home-img {
-        background: #216f5f;
+        background: none;
         height: 350px;
+    }
+    .home-img p {
+      color: var(--second-color);;
     }
 
     .item {
@@ -172,8 +243,9 @@ header a:hover {
     }
 
     .btn-outline-light {
-        border-color: black;
-        color: black;
+        border-color: rgb(143, 138, 138);
+        color: rgb(143, 138, 138);
+       
     }
 
     .btn-outline-light:hover {
@@ -181,14 +253,13 @@ header a:hover {
         background-color: rgba(0, 0, 0, 0.808);
         color: white !important;
     }
-
     .n-link {
         background-color: #6cac08;
         border-radius: 10px;
         margin-bottom: 20px;
     }
 
-   .n-link:hover {
+    .n-link:hover {
         color: #7e22ce !important;
     }
 }
