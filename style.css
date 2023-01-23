@@ -191,8 +191,8 @@ header a:hover {
 }
 .s-search {
     border: 2px solid #7e22ce !important;
-    background-color: #a9a9a982 !important;
-    /* color: white !important; */
+    background-color: var(--first-color) !important;
+    color: var(--second-color) !important;
     height: 40px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -207,10 +207,12 @@ header a:hover {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border: 2px solid #7e22ce !important;
-    background-color: #a9a9a982 !important;
+/*     background-color: #a9a9a982 !important; */
+    background-color: var(--first-color) !important;
     box-shadow: none !important;
     border-right: none !important;
-    color: white !important;
+    color: var(--second-color) !important;
+    font-weight: bold;
 }
 .btn-main{
     transition: all 0.3s ease;
