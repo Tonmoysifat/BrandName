@@ -114,9 +114,13 @@ header a:hover {
 #pricing {
     padding: 3.5% 0;
 }
-.card{
-    background-color: var(--first-color);
+.card {
+    background-color: var(--third-color);
     color: var(--second-color);
+}
+
+.given-shadow {
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.3);
 }
 .modal-content{
     background-color: var(--first-color);
