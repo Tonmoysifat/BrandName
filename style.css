@@ -313,6 +313,15 @@ header a:hover {
     .n-link:hover {
         color: #7e22ce !important;
     }
+     footer {
+        flex-direction: column; 
+    }
+    footer .timeNow{
+        margin: 10px 0px;
+    }
+    footer .timeNow p{
+        margin-bottom: 0 !important;
+    }
 }
 
 @media screen and (max-width:387px) {
@@ -324,14 +333,7 @@ header a:hover {
         width: 150px !important;
     }
 
-    footer {
-        width: 206px;
-        margin: auto;
-    }
-
-    footer ul {
-        margin: auto;
-    }
+  
 }
 
 @media screen and (max-width:281px) {
