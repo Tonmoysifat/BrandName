@@ -31,3 +31,8 @@ icon.onclick = function () {
     }
 
 }
+let x= setInterval(() => {
+    let date=new Date();
+    let time= date.toDateString()+","+date.toLocaleTimeString();
+    document.getElementById("time").innerHTML=time;
+}, 1000);
