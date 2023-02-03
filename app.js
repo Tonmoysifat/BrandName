@@ -6,12 +6,14 @@ if (localStorage.getItem("Theme") == null) {
 let localData = localStorage.getItem("Theme");
 if (localData == "light") {
     icon.innerHTML = "Dark";
+    icon.classList="fa-solid fa-moon";
     // icon.src="images/moon.png";
     document.body.classList.remove("dark-theme");
     nevi.style.backgroundColor = "white";
 }
 else if (localData == "dark") {
     icon.innerHTML = "Light";
+    icon.classList="fa-solid fa-sun";
     // icon.src="images/sun.png";
     document.body.classList.add("dark-theme");
     nevi.style.backgroundColor = "";
@@ -22,11 +24,13 @@ icon.onclick = function () {
         // icon.src="images/sun.png";
         nevi.style.backgroundColor = "";
         icon.innerHTML = "Light";
+        icon.classList="fa-solid fa-sun";
         localStorage.setItem("Theme", "dark");
     } else {
         // icon.src="images/moon.png";
         nevi.style.backgroundColor = "white";
         icon.innerHTML = "Dark";
+        icon.classList="fa-solid fa-moon";
         localStorage.setItem("Theme", "light");
     }
 
