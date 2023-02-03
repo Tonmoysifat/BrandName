@@ -57,8 +57,20 @@ nav{
 .btn-forls{
     margin-right: -11px;
 }
+.fa-moon:before {
+    margin-right: 5px;
+}
+.fa-sun:before {
+    margin-right: 5px;
+}
+.fa-solid, .fas {
+    margin-bottom: 0;
+}
 .web-theme:hover {
     background-color:#8787887a !important;
+}
+.web-theme:active {
+  color: black;
 }
 .web-theme{
     padding: 3px 0px;
