@@ -19,6 +19,18 @@ body {
     background-color: var(--first-color);
     color: var(--second-color);
 }
+::-webkit-scrollbar{
+    width: 1.1rem;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--third-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgb(29, 173, 199);
+    border-radius: 1rem;
+    border: .2rem solid transparent;
+    background-clip: content-box;
+}
 
 span {
     color: lightseagreen;
