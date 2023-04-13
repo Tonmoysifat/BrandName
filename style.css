@@ -283,12 +283,12 @@ header a:hover {
 }
 .btn-main{
     transition: all 0.3s ease;
-     border-radius: 0;
+     border-radius: 0 !important;
     /* border-radius: 100px; */
 }
 .btn-main:hover{
     transform: translateY(-5px);
-    border-radius:100px;
+    border-radius:100px !important;
 }
 /* responsive css */
 @media screen and (max-width:767px) {
